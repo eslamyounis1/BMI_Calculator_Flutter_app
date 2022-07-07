@@ -50,9 +50,7 @@ class _BmiScreenState extends State<BmiScreen> {
                     child: GestureDetector(
                       onTap: () {
                         setState(() {
-                          setState(() {
-                            isMale = false;
-                          });
+                          isMale = false;
                         });
                       },
                       child: Container(
@@ -67,9 +65,9 @@ class _BmiScreenState extends State<BmiScreen> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: const [
                             Image(
-                              image: AssetImage('assets/images/female.png'),
-                              height: 70.0,
-                              width: 70.0,
+                              image: AssetImage('assets/images/female_vector.png'),
+                              height: 90.0,
+                              width: 90.0,
                             ),
                             SizedBox(
                               height: 15.0,
@@ -108,9 +106,9 @@ class _BmiScreenState extends State<BmiScreen> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: const [
                             Image(
-                              image: AssetImage('assets/images/male.png'),
-                              height: 70.0,
-                              width: 70.0,
+                              image: AssetImage('assets/images/male_vector.png'),
+                              height: 90.0,
+                              width: 90.0,
                             ),
                             SizedBox(
                               height: 15.0,
@@ -154,6 +152,9 @@ class _BmiScreenState extends State<BmiScreen> {
                         fontSize: 20.0,
                         fontWeight: FontWeight.bold,
                       ),
+                    ),
+                    const SizedBox(
+                      height: 7.0,
                     ),
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.baseline,
@@ -242,7 +243,6 @@ class _BmiScreenState extends State<BmiScreen> {
                                   setState(() {
                                     weight--;
                                   });
-
                                 },
                                 heroTag: 'weight-',
                                 mini: true,
@@ -367,13 +367,17 @@ class _BmiScreenState extends State<BmiScreen> {
             width: double.infinity,
             child: MaterialButton(
               onPressed: () {
-                double result = weight/ pow(height/ 100, 2) ;
+                double result = weight / pow(height / 100, 2);
                 print(result.round());
                 Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) =>  BMIResultScreen(result: result.round(),isMale: isMale,age: age,),
-                ),
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => BMIResultScreen(
+                      result: result.round(),
+                      isMale: isMale,
+                      age: age,
+                    ),
+                  ),
                 );
               },
               child: const Text(
