@@ -5,4 +5,5 @@ BMI is a measurement of a person's leanness or corpulence based on their height 
 ## How my app looks like:
 
 
-![f](https://user-images.githubusercontent.com/91839880/177674710-8673aed0-db0d-40cb-9265-5a1c967ca27a.jpg)
+![f](https://user-images.githubusercontent.com/91839880/177674710-8673aed0-db0d-40cb-9265-5a1c967ca27a.jpg) ---- ![s](https://user-images.githubusercontent.com/91839880/177675015-3e101741-37cf-4591-8376-36ff57a1d020.jpg)
+
