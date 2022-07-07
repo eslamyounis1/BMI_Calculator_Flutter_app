@@ -7,5 +7,5 @@ BMI is a measurement of a person's leanness or corpulence based on their height 
 
 ![f](https://user-images.githubusercontent.com/91839880/177674710-8673aed0-db0d-40cb-9265-5a1c967ca27a.jpg) ---- ![s](https://user-images.githubusercontent.com/91839880/177675015-3e101741-37cf-4591-8376-36ff57a1d020.jpg)
 
-<img src="[https://camo.githubusercontent.com/](https://drive.google.com/file/d/1AGAyY2YiJ2B_PCcohOWFIBeVe9-wXtTW/view?usp=sharing)"/>
+![Home Screen](https://drive.google.com/file/d/1AGAyY2YiJ2B_PCcohOWFIBeVe9-wXtTW/view?usp=sharing)
 
