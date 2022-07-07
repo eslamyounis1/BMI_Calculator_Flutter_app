@@ -373,7 +373,7 @@ class _BmiScreenState extends State<BmiScreen> {
                   context,
                   MaterialPageRoute(
                     builder: (context) => BMIResultScreen(
-                      result: result.round(),
+                      result: result,
                       isMale: isMale,
                       age: age,
                     ),

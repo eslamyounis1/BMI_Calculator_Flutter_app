@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class BMIResultScreen extends StatelessWidget {
   // const BMIResultScreen({Key? key, required this.result}) : super(key: key);
-  final int result;
+  final double result;
   final bool isMale;
   final int age;
 
@@ -37,23 +37,46 @@ class BMIResultScreen extends StatelessWidget {
           child: Column(
             // mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              // Padding(
-              //   padding: const EdgeInsets.all(12.0),
-              //   child: Row(
-              //     mainAxisAlignment: MainAxisAlignment.center,
-              //     children: [
-              //
-              //       Text(
-              //         '${result >= 20 ? 'Normal' : 'over weight'}',
-              //         style: const TextStyle(
-              //           color: Colors.white,
-              //           fontSize: 25.0,
-              //           fontWeight: FontWeight.bold,
-              //         ),
-              //       ),
-              //     ],
-              //   ),
-              // ),
+              Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    if (result <= 18.4)
+                      const Text(
+                        'UnderWeight',
+                        style: TextStyle(
+                          fontSize: 30.0,
+                          color: Colors.white,
+                        ),
+                      )
+                    else if (result >= 18.5 && result <= 24.9)
+                      const Text(
+                        'Normal',
+                        style: TextStyle(
+                          fontSize: 30.0,
+                          color: Colors.green,
+                        ),
+                      )
+                    else if (result >= 25.0 && result <= 39.9)
+                      const Text(
+                        'OverWight',
+                        style: TextStyle(
+                          fontSize: 30.0,
+                          color: Colors.orange,
+                        ),
+                      )
+                    else if (result >= 40.0)
+                      const Text(
+                        'Obsese',
+                        style: TextStyle(
+                          fontSize: 30.0,
+                          color: Colors.red,
+                        ),
+                      )
+                  ],
+                ),
+              ),
               Expanded(
                 child: Center(
                   child: Column(
@@ -71,7 +94,7 @@ class BMIResultScreen extends StatelessWidget {
                         height: 7.0,
                       ),
                       Text(
-                        'Result: $result',
+                        'Result: ${result.round()}',
                         style: const TextStyle(
                           color: Colors.white,
                           fontSize: 25.0,
