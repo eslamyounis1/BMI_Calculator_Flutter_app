@@ -35,7 +35,7 @@ class BMIResultScreen extends StatelessWidget {
               ),
               color: const Color(0xff1A1F38)),
           child: Column(
-            // mainAxisAlignment: MainAxisAlignment.center,
+            
             children: [
               Padding(
                 padding: const EdgeInsets.all(12.0),
