@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class BMIResultScreen extends StatelessWidget {
-  // const BMIResultScreen({Key? key, required this.result}) : super(key: key);
+  
   final double result;
   final bool isMale;
   final int age;
