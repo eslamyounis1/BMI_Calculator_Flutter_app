@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class BMIResultScreen extends StatelessWidget {
-  // const BMIResultScreen({Key? key, required this.result}) : super(key: key);
+  
   final double result;
   final bool isMale;
   final int age;
@@ -35,7 +35,7 @@ class BMIResultScreen extends StatelessWidget {
               ),
               color: const Color(0xff1A1F38)),
           child: Column(
-            // mainAxisAlignment: MainAxisAlignment.center,
+            
             children: [
               Padding(
                 padding: const EdgeInsets.all(12.0),
