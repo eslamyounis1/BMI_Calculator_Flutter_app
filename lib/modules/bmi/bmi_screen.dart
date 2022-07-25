@@ -1,6 +1,6 @@
 import 'dart:math';
 
-import 'package:bmi_calculator/result_screen.dart';
+import 'package:bmi_calculator/modules/bmi_result/result_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
